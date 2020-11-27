@@ -58,7 +58,32 @@ public class ExcelManager implements Closeable {
     public String getCellValue(Integer sheetIndex, Integer rowIndex, String columnName) {
 
         var cell = this.getCell(sheetIndex, rowIndex, columnName);
-        return cell != null ? cell.getStringCellValue() : null;
+
+        if (cell != null){
+
+            switch (cell.getCellType()) {
+
+                case _NONE:
+                case FORMULA:
+                case BLANK:
+                    return null;
+                case NUMERIC:
+                {
+                    var value = cell.getNumericCellValue();
+                    if (value - (int)value == (double) 0)
+                        return Integer.toString((int)value);
+                    else
+                        return Double.toString(value);
+                }
+                case STRING:
+                    return cell.getStringCellValue();
+                case BOOLEAN:
+                    return Boolean.toString( cell.getBooleanCellValue() );
+                case ERROR:
+                    return cell.getErrorCellString();
+            }
+        }
+        return  null;
     }
     public void setCellValue(Integer rowIndex, String columnName, String value){
         this.setCellValue(0, rowIndex, columnName, value);

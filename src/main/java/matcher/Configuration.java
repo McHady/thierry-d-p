@@ -5,11 +5,11 @@ import java.util.Properties;
 
 public class Configuration {
 
-    private String resultTableFile = "Austria 3-result.xlsx";
+    private String resultFileFolder = ".";
     private String resultDestinationColumn = "M";
     private String resultKeyColumn = "B";
 
-    private String wsjTableFile = "Austria list.xlsx";
+    private String wsjFileFolder = ".";
     private String wsjCountryCodeColumn = "AH";
     private String wsjPrefixColumn = "AI";
     private String wsjCodeColumn = "D";
@@ -26,13 +26,13 @@ public class Configuration {
             var properties = new Properties();
             properties.load(stream);
 
-            this.wsjTableFile = properties.getProperty("WSJ_TABLE_FILE", "DefaultWSJ.xlsx");
+            this.wsjFileFolder = properties.getProperty("WSJ_FILE_FOLDER", ".");
             this.wsjCountryCodeColumn = properties.getProperty("WSJ_COUNTRY_CODE_COLUMN", "AH");
             this.wsjPrefixColumn = properties.getProperty("WSJ_PREFIX_COLUMN", "AI");
             this.wsjCodeColumn = properties.getProperty("WSJ_CODE_COLUMN", "D");
             this.wsjKeyColumn = properties.getProperty("WSJ_KEY_COLUMN", "B");
 
-            this.resultTableFile = properties.getProperty("RESULT_TABLE_FILE", "Result.xlsx");
+            this.resultFileFolder = properties.getProperty("RESULT_FILE_FOLDER", ".");
             this.resultDestinationColumn = properties.getProperty("RESULT_DESTINATION_COLUMN", "M");
             this.resultKeyColumn = properties.getProperty("RESULT_KEY_COLUMN", "B");
 
@@ -42,7 +42,6 @@ public class Configuration {
 
         } catch (FileNotFoundException e) {
             System.out.println("Can't find configuration file");
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -64,14 +63,6 @@ public class Configuration {
         return this.urlRoot;
     }
 
-    public String getWSJTableFile() {
-        return wsjTableFile;
-    }
-
-    public String getResultTableFile() {
-        return resultTableFile;
-    }
-
     public String getWSJKeyColumn() {
         return wsjKeyColumn;
     }
@@ -82,5 +73,13 @@ public class Configuration {
 
     public String getResultKeyColumn() {
         return resultKeyColumn;
+    }
+
+    public String getResultFileFolder() {
+        return resultFileFolder;
+    }
+
+    public String getWSJFileFolder() {
+        return wsjFileFolder;
     }
 }

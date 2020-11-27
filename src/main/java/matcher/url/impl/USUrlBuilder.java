@@ -1,4 +1,6 @@
-package matcher.url;
+package matcher.url.impl;
+
+import matcher.url.WSJUrlBuilder;
 
 public final class USUrlBuilder extends WSJUrlBuilder {
 

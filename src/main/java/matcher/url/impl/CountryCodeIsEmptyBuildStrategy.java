@@ -1,8 +1,6 @@
 package matcher.url.impl;
 
-import matcher.url.DefaultUrlBuilder;
 import matcher.url.IBuildStrategy;
-import matcher.url.USUrlBuilder;
 import matcher.url.UrlBuilder;
 
 public class CountryCodeIsEmptyBuildStrategy implements IBuildStrategy {
@@ -24,6 +22,6 @@ public class CountryCodeIsEmptyBuildStrategy implements IBuildStrategy {
 
     @Override
     public UrlBuilder resolve(String countryCode, String prefix, String wsjCode) {
-        return countryCode.equals(this.emptyCriteria) ? isNull : notNull;
+        return countryCode == this.emptyCriteria ? isNull : notNull;
     }
 }
