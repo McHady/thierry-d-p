@@ -1,0 +1,569 @@
+#non us company
+#https://www.wsj.com/market-data/quotes/HK/XHKG/388?id=%7B"ticker"%3A"388"%2C"countryCode"%3A"hk"%2C"exchange"%3A"xhkg"%2C"type"%3A"STOCK"%2C"path"%3A"%2Fhk%2Fxhkg%2F388"%7D&type=quotes_chart
+{
+    "id": "{\"ticker\":\"388\",\"countryCode\":\"hk\",\"exchange\":\"xhkg\",\"type\":\"STOCK\",\"path\":\"/hk/xhkg/388\"}",
+    "type": "quotes_chart",
+    "data": {
+        "quote": {
+            "prevClose": "383.00",
+            "prevCloseDt": "11/25/20",
+            "marketCap": "495.72 B",
+            "F2Week": {
+                "LowHighVal": "206.00 - 398.40",
+                "LowHighDt": "(03/19/20 - 11/25/20)"
+            },
+            "Avg65DayVol": "4,666,473",
+            "Todays": {
+                "Open": "386.60",
+                "HighLow": "380.80 - 386.60",
+                "Vol": "1,188,313"
+            },
+            "Currency": {
+                "Code": "HKD",
+                "Symbol": "$"
+            },
+            "Instrument": {
+                "Types": [
+                    "Stock:http://service.marketwatch.com/ws/2007/05/symbology"
+                ],
+                "Debug": [
+                    "http://system.marketwatch.com/mrkt/symbolid/181448",
+                    "http://system.marketwatch.com/comstock/symbol/",
+                    "http://system.marketwatch.com/varasto/varastoid/200234512",
+                    "http://system.dowjones.com/dowjones/fuid/STOCK-XHKG-388",
+                    "http://system.marketwatch.com/dowjones/djid/364959",
+                    "http://system.marketwatch.com/dylan/official/STOCK-HK-388"
+                ],
+                "CommonName": "Hong Kong Exchanges & Clearing Ltd.",
+                "Ticker": "388",
+                "Cusip": null,
+                "Sedol": "6267359",
+                "Isin": "HK0388045442",
+                "Expires": null,
+                "Strike": null,
+                "Exchange": {
+                    "Types": [
+                        "Exchange:http://service.marketwatch.com/ws/2007/05/symbology"
+                    ],
+                    "Debug": [
+                        "http://system.marketwatch.com/mrkt/exchangeid/0"
+                    ],
+                    "CommonName": "Hong Kong",
+                    "Ticker": "HKG",
+                    "CountryCode": "HK",
+                    "MarketCode": null,
+                    "ExchangeDelay": 15,
+                    "IsoCode": "XHKG"
+                },
+                "Issuer": null,
+                "Underlying": null
+            },
+            "bgChannel": "",
+            "bgChannelDelayed": "/zigman2/quotes/200234512/delayed",
+            "marketState": {},
+            "timezone": "HKST",
+            "internationalTkr": true,
+            "type": "quotes_chart",
+            "showLowerSection": false,
+            "topSection": {
+                "msg": "",
+                "value": "382.00",
+                "change": "-1.00",
+                "date": "11/26/20",
+                "DateTime": "1:30 PM HKST 11/26/20",
+                "perChange": "-0.26%",
+                "deltaBarPosNeg": "deltaBar-neg"
+            },
+            "decimal": 3,
+            "chartingSymbol": "quotes_chart/HK/XHKG/388"
+        },
+        "quoteData": {
+            "Instrument": {
+                "Types": [
+                    "Stock:http://service.marketwatch.com/ws/2007/05/symbology"
+                ],
+                "Debug": [
+                    "http://system.marketwatch.com/mrkt/symbolid/181448",
+                    "http://system.marketwatch.com/comstock/symbol/",
+                    "http://system.marketwatch.com/varasto/varastoid/200234512",
+                    "http://system.dowjones.com/dowjones/fuid/STOCK-XHKG-388",
+                    "http://system.marketwatch.com/dowjones/djid/364959",
+                    "http://system.marketwatch.com/dylan/official/STOCK-HK-388"
+                ],
+                "CommonName": "Hong Kong Exchanges & Clearing Ltd.",
+                "Ticker": "388",
+                "Cusip": null,
+                "Sedol": "6267359",
+                "Isin": "HK0388045442",
+                "Expires": null,
+                "Strike": null,
+                "Exchange": {
+                    "Types": [
+                        "Exchange:http://service.marketwatch.com/ws/2007/05/symbology"
+                    ],
+                    "Debug": [
+                        "http://system.marketwatch.com/mrkt/exchangeid/0"
+                    ],
+                    "CommonName": "Hong Kong",
+                    "Ticker": "HKG",
+                    "CountryCode": "HK",
+                    "MarketCode": null,
+                    "ExchangeDelay": 15,
+                    "IsoCode": "XHKG"
+                },
+                "Issuer": null,
+                "Underlying": null
+            },
+            "UpdatedInstrument": null,
+            "Trading": {
+                "Last": {
+                    "Price": {
+                        "Iso": "HKD",
+                        "Value": 382
+                    },
+                    "Size": null,
+                    "Time": "/Date(1606397436000+0000)/"
+                },
+                "Open": {
+                    "Iso": "HKD",
+                    "Value": 386.6
+                },
+                "High": {
+                    "Iso": "HKD",
+                    "Value": 386.6
+                },
+                "Low": {
+                    "Iso": "HKD",
+                    "Value": 380.8
+                },
+                "NetChange": {
+                    "Iso": "HKD",
+                    "Value": -1
+                },
+                "Volume": 1188313,
+                "TradeCondition": null,
+                "ChangePercent": -0.26109660574412535,
+                "IsRealtime": false
+            },
+            "AfterHoursTrading": null,
+            "Offers": null,
+            "TradingStatistics": {
+                "PriceStatistics": [
+                    {
+                        "Range": {
+                            "Type": "AllData:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": null
+                        },
+                        "Average": null,
+                        "Minimum": {
+                            "Iso": null,
+                            "Value": 7.6
+                        },
+                        "Maximum": {
+                            "Iso": null,
+                            "Value": 398.4
+                        },
+                        "MinimumDateTime": "/Date(1051228800000+0000)/",
+                        "MaximumDateTime": "/Date(1606262400000+0000)/"
+                    },
+                    {
+                        "Range": {
+                            "Type": "YearToDate:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": "/Date(1577836800000+0000)/",
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": null
+                        },
+                        "Average": null,
+                        "Minimum": {
+                            "Iso": null,
+                            "Value": 206
+                        },
+                        "Maximum": {
+                            "Iso": null,
+                            "Value": 398.4
+                        },
+                        "MinimumDateTime": "/Date(1584576000000+0000)/",
+                        "MaximumDateTime": "/Date(1606262400000+0000)/"
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P364D"
+                            }
+                        },
+                        "Average": null,
+                        "Minimum": {
+                            "Iso": null,
+                            "Value": 206
+                        },
+                        "Maximum": {
+                            "Iso": null,
+                            "Value": 398.4
+                        },
+                        "MinimumDateTime": "/Date(1584576000000+0000)/",
+                        "MaximumDateTime": "/Date(1606262400000+0000)/"
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P50D"
+                            }
+                        },
+                        "Average": {
+                            "Iso": null,
+                            "Value": 371.624
+                        },
+                        "Minimum": null,
+                        "Maximum": null,
+                        "MinimumDateTime": null,
+                        "MaximumDateTime": null
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P200D"
+                            }
+                        },
+                        "Average": {
+                            "Iso": null,
+                            "Value": 316.488
+                        },
+                        "Minimum": null,
+                        "Maximum": null,
+                        "MinimumDateTime": null,
+                        "MaximumDateTime": null
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P3M"
+                            }
+                        },
+                        "Average": {
+                            "Iso": null,
+                            "Value": 373.403076923077
+                        },
+                        "Minimum": null,
+                        "Maximum": null,
+                        "MinimumDateTime": null,
+                        "MaximumDateTime": null
+                    }
+                ],
+                "VolumeStatistics": [
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P50D"
+                            }
+                        },
+                        "Average": 4638122.32,
+                        "Minimum": null,
+                        "Maximum": null
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P200D"
+                            }
+                        },
+                        "Average": 5993496.565,
+                        "Minimum": null,
+                        "Maximum": null
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P3M"
+                            }
+                        },
+                        "Average": 4666472.55384615,
+                        "Minimum": null,
+                        "Maximum": null
+                    }
+                ]
+            },
+            "Financials": {
+                "OpenInterest": null,
+                "LastDividendPerShare": {
+                    "Iso": "HKD",
+                    "Value": 3.71000004
+                },
+                "SharesOutstanding": 1267836900,
+                "Yield": 1.7539267015706805,
+                "LastEarningsPerShare": {
+                    "Iso": "HKD",
+                    "Value": 8.3427
+                },
+                "PriceToEarningsRatio": 45.788533688134535,
+                "MarketCapitalization": {
+                    "Iso": "HKD",
+                    "Value": 495717783203.125
+                },
+                "Previous": {
+                    "Price": {
+                        "Iso": null,
+                        "Value": 383
+                    },
+                    "Size": null,
+                    "Time": "/Date(1606262400000+0000)/"
+                },
+                "LastDividendExDateTime": "/Date(1598918400000+0000)/",
+                "ShortInterest": null,
+                "DollarsTraded": 453935566,
+                "ShortInterestNetChange": null,
+                "ShortInterestChangePercent": null,
+                "DaysToCover": null,
+                "PercentOfFloatShorted": null,
+                "PercentOfSharesOutstandingShorted": null,
+                "PublicFloat": 1189848172.28074,
+                "MoneyFlow": null,
+                "LastSplitDate": null,
+                "LastSplitFactor": null,
+                "AnnualReportAvailable": false,
+                "LastDividendPayDate": "/Date(1600128000000+0000)/",
+                "LastShortInterestDate": null,
+                "MoneyFlowRatio": null,
+                "PreviousVolume": 8665708,
+                "SpecialDividend": false,
+                "AnnualizedDividend": 6.7,
+                "EstimatedPriceToEarningsRatioCurrentYear": 43.35779568058743,
+                "EstimatedPriceToEarningsRatioNextYear": 37.41718020603741,
+                "SalesPerEmployee": 6876475.54806071,
+                "Beta": 1.06388391720509,
+                "RevenuePerEmployee": {
+                    "Iso": "HKD",
+                    "Value": 6876475.54806071
+                }
+            },
+            "BeforeHoursTrading": null,
+            "FinancialStatusIndicator": null,
+            "RealtimeTrading": null,
+            "RealTimeBeforeHoursTrading": null,
+            "RealTimeAfterHoursTrading": null,
+            "CompositeTrading": {
+                "Last": {
+                    "Price": {
+                        "Iso": "HKD",
+                        "Value": 382
+                    },
+                    "Size": null,
+                    "Time": "/Date(1606397436000+0000)/"
+                },
+                "Open": {
+                    "Iso": "HKD",
+                    "Value": 386.6
+                },
+                "High": {
+                    "Iso": "HKD",
+                    "Value": 386.6
+                },
+                "Low": {
+                    "Iso": "HKD",
+                    "Value": 380.8
+                },
+                "NetChange": {
+                    "Iso": "HKD",
+                    "Value": -1
+                },
+                "Volume": 1188313,
+                "TradeCondition": null,
+                "ChangePercent": -0.26109660574412535,
+                "IsRealtime": false
+            },
+            "CompositeBeforeHoursTrading": null,
+            "CompositeAfterHoursTrading": null,
+            "IndustryClassification": {
+                "Industry": {
+                    "Instrument": {
+                        "Types": [
+                            "Index:http://service.marketwatch.com/ws/2007/05/symbology"
+                        ],
+                        "Debug": [
+                            "http://system.marketwatch.com/mrkt/symbolid/20370825",
+                            "http://system.marketwatch.com/comstock/symbol/",
+                            "http://system.marketwatch.com/varasto/varastoid/211348183",
+                            "http://system.dowjones.com/dowjones/fuid/",
+                            "http://system.marketwatch.com/dylan/official/INDEX-XX-WSJIXUSSCR"
+                        ],
+                        "CommonName": "WSJ US Securities Index",
+                        "Ticker": "WSJIXUSSCR",
+                        "Cusip": null,
+                        "Sedol": null,
+                        "Isin": null,
+                        "Expires": null,
+                        "Strike": null,
+                        "Exchange": {
+                            "Types": [
+                                "Exchange:http://service.marketwatch.com/ws/2007/05/symbology"
+                            ],
+                            "Debug": [
+                                "http://system.marketwatch.com/mrkt/exchangeid/1338"
+                            ],
+                            "CommonName": "WSJ Indexes",
+                            "Ticker": "WSJ",
+                            "CountryCode": "XX",
+                            "MarketCode": null,
+                            "ExchangeDelay": null,
+                            "IsoCode": "CALCULATED"
+                        },
+                        "Issuer": null,
+                        "Underlying": null
+                    },
+                    "DisplayName": "Securities"
+                },
+                "Sector": {
+                    "Instrument": {
+                        "Types": [
+                            "Index:http://service.marketwatch.com/ws/2007/05/symbology"
+                        ],
+                        "Debug": [
+                            "http://system.marketwatch.com/mrkt/symbolid/20370704",
+                            "http://system.marketwatch.com/comstock/symbol/",
+                            "http://system.marketwatch.com/varasto/varastoid/211317905",
+                            "http://system.dowjones.com/dowjones/fuid/",
+                            "http://system.marketwatch.com/dylan/official/INDEX-XX-WSJMXUSFCL"
+                        ],
+                        "CommonName": "WSJ US Financial Services Index",
+                        "Ticker": "WSJMXUSFCL",
+                        "Cusip": null,
+                        "Sedol": null,
+                        "Isin": null,
+                        "Expires": null,
+                        "Strike": null,
+                        "Exchange": {
+                            "Types": [
+                                "Exchange:http://service.marketwatch.com/ws/2007/05/symbology"
+                            ],
+                            "Debug": [
+                                "http://system.marketwatch.com/mrkt/exchangeid/1338"
+                            ],
+                            "CommonName": "WSJ Indexes",
+                            "Ticker": "WSJ",
+                            "CountryCode": "XX",
+                            "MarketCode": null,
+                            "ExchangeDelay": null,
+                            "IsoCode": "CALCULATED"
+                        },
+                        "Issuer": null,
+                        "Underlying": null
+                    },
+                    "DisplayName": "Financial Services"
+                }
+            },
+            "FutureSpecific": null,
+            "BondSpecific": null,
+            "BlueGrassChannels": [
+                {
+                    "BlueGrassChannelType": "DelayedChannel:http://service.marketwatch.com/ws/2007/10/financialdata",
+                    "Channel": "/zigman2/quotes/200234512/delayed"
+                }
+            ],
+            "TimeZoneInfo": {
+                "TimeZone": "China Standard Time",
+                "UtcOffsetHours": 8,
+                "DisplayName": "(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi",
+                "UtcOffsetMinutes": 0,
+                "AdjustedDisplayName": "(UTC+08:00) China Standard Time",
+                "Abbreviation": "HKST",
+                "ShortAbbreviation": "HKT"
+            },
+            "DebugInfo": null,
+            "CurrencySpecific": null,
+            "DatafeedSpecificCurrency": null,
+            "Meta": {
+                "MarketState": "Normal",
+                "RealtimeProvider": "NLS",
+                "DataProvider": "FACTSET",
+                "DelayType": "Intraday",
+                "ProposedMantissa": 3,
+                "CurrencySymbolInfos": [
+                    {
+                        "CurrencyIsoCode": "HKD",
+                        "UnitSymbol": "HK$",
+                        "Suffix": false
+                    }
+                ],
+                "ThirdPartyUrl": null
+            },
+            "RoncoSpecific": null,
+            "RelatedInstrumentInfo": null,
+            "PastCloses": {
+                "EndOfPreviousYearClose": 253,
+                "FiftyTwoWeekAgoClose": 250.4,
+                "FourWeekAgoClose": 383.4,
+                "OneHundredFiftySixWeekAgoClose": 235.2,
+                "OneHundredFourWeekAgoClose": 228.2,
+                "OneWeekAgoClose": 370.4,
+                "ThirteenWeekAgoClose": 379.4,
+                "TwentySixWeekAgoClose": 269.6
+            },
+            "MovingAverages": null,
+            "TradingRange": null,
+            "MutualFundSpecific": {
+                "LipperIdentifier": null,
+                "MorningstarIdentifier": null,
+                "NetAssetValue": null,
+                "NetAssetValueDate": null,
+                "DiscountToNetAssetValue": null,
+                "PremiumToNetAssetValue": null
+            },
+            "DialectSymbols": null,
+            "ReportingStatistics": null,
+            "IndexSpecific": null
+        },
+        "advancedChartUrl": "https://www.wsj.com/market-data/quotes/388/advanced-chart",
+        "path": "/hk/xhkg/388",
+        "relativePerformance": {
+            "data": [
+                {
+                    "name": "DJIA",
+                    "perChange": "-0.58%",
+                    "deltaBarPosNeg": "deltaBar-neg",
+                    "Ticker": "DJIA",
+                    "bgChannel": "/zigman2/quotes/210598065/realtime",
+                    "url": "/index/DJIA"
+                },
+                {
+                    "name": "S&P 500",
+                    "perChange": "-0.16%",
+                    "deltaBarPosNeg": "deltaBar-neg",
+                    "Ticker": "SPX",
+                    "bgChannel": "/zigman2/quotes/210599714/realtime",
+                    "url": "/index/SPX"
+                },
+                {
+                    "name": "Financial Services",
+                    "perChange": "0.68%",
+                    "deltaBarPosNeg": "deltaBar-pos",
+                    "Ticker": "WSJMXUSFCL",
+                    "bgChannel": "",
+                    "url": "/index/WSJMXUSFCL"
+                }
+            ]
+        }
+    },
+    "hash": "{\"id\":\"{\\\"ticker\\\":\\\"388\\\",\\\"countryCode\\\":\\\"hk\\\",\\\"exchange\\\":\\\"xhkg\\\",\\\"type\\\":\\\"STOCK\\\",\\\"path\\\":\\\"/hk/xhkg/388\\\"}\",\"type\":\"quotes_chart\",\"data\":{\"quote\":{\"prevClose\":\"383.00\",\"prevCloseDt\":\"11/25/20\",\"marketCap\":\"495.72 B\",\"F2Week\":{\"LowHighVal\":\"206.00 - 398.40\",\"LowHighDt\":\"(03/19/20 - 11/25/20)\"},\"Avg65DayVol\":\"4,666,473\",\"Todays\":{\"Open\":\"386.60\",\"HighLow\":\"380.80 - 386.60\",\"Vol\":\"1,188,313\"},\"Currency\":{\"Code\":\"HKD\",\"Symbol\":\"$\"},\"Instrument\":{\"Types\":[\"Stock:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/symbolid/181448\",\"http://system.marketwatch.com/comstock/symbol/\",\"http://system.marketwatch.com/varasto/varastoid/200234512\",\"http://system.dowjones.com/dowjones/fuid/STOCK-XHKG-388\",\"http://system.marketwatch.com/dowjones/djid/364959\",\"http://system.marketwatch.com/dylan/official/STOCK-HK-388\"],\"CommonName\":\"Hong Kong Exchanges & Clearing Ltd.\",\"Ticker\":\"388\",\"Cusip\":null,\"Sedol\":\"6267359\",\"Isin\":\"HK0388045442\",\"Expires\":null,\"Strike\":null,\"Exchange\":{\"Types\":[\"Exchange:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/exchangeid/0\"],\"CommonName\":\"Hong Kong\",\"Ticker\":\"HKG\",\"CountryCode\":\"HK\",\"MarketCode\":null,\"ExchangeDelay\":15,\"IsoCode\":\"XHKG\"},\"Issuer\":null,\"Underlying\":null},\"bgChannel\":\"\",\"bgChannelDelayed\":\"/zigman2/quotes/200234512/delayed\",\"marketState\":{},\"timezone\":\"HKST\",\"internationalTkr\":true,\"type\":\"quotes_chart\",\"showLowerSection\":false,\"topSection\":{\"msg\":\"\",\"value\":\"382.00\",\"change\":\"-1.00\",\"date\":\"11/26/20\",\"DateTime\":\"1:30 PM HKST 11/26/20\",\"perChange\":\"-0.26%\",\"deltaBarPosNeg\":\"deltaBar-neg\"},\"decimal\":3,\"chartingSymbol\":\"quotes_chart/HK/XHKG/388\"},\"quoteData\":{\"Instrument\":{\"Types\":[\"Stock:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/symbolid/181448\",\"http://system.marketwatch.com/comstock/symbol/\",\"http://system.marketwatch.com/varasto/varastoid/200234512\",\"http://system.dowjones.com/dowjones/fuid/STOCK-XHKG-388\",\"http://system.marketwatch.com/dowjones/djid/364959\",\"http://system.marketwatch.com/dylan/official/STOCK-HK-388\"],\"CommonName\":\"Hong Kong Exchanges & Clearing Ltd.\",\"Ticker\":\"388\",\"Cusip\":null,\"Sedol\":\"6267359\",\"Isin\":\"HK0388045442\",\"Expires\":null,\"Strike\":null,\"Exchange\":{\"Types\":[\"Exchange:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/exchangeid/0\"],\"CommonName\":\"Hong Kong\",\"Ticker\":\"HKG\",\"CountryCode\":\"HK\",\"MarketCode\":null,\"ExchangeDelay\":15,\"IsoCode\":\"XHKG\"},\"Issuer\":null,\"Underlying\":null},\"UpdatedInstrument\":null,\"Trading\":{\"Last\":{\"Price\":{\"Iso\":\"HKD\",\"Value\":382},\"Size\":null,\"Time\":\"/Date(1606397436000+0000)/\"},\"Open\":{\"Iso\":\"HKD\",\"Value\":386.6},\"High\":{\"Iso\":\"HKD\",\"Value\":386.6},\"Low\":{\"Iso\":\"HKD\",\"Value\":380.8},\"NetChange\":{\"Iso\":\"HKD\",\"Value\":-1},\"Volume\":1188313,\"TradeCondition\":null,\"ChangePercent\":-0.26109660574412535,\"IsRealtime\":false},\"AfterHoursTrading\":null,\"Offers\":null,\"TradingStatistics\":{\"PriceStatistics\":[{\"Range\":{\"Type\":\"AllData:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":null},\"Average\":null,\"Minimum\":{\"Iso\":null,\"Value\":7.6},\"Maximum\":{\"Iso\":null,\"Value\":398.4},\"MinimumDateTime\":\"/Date(1051228800000+0000)/\",\"MaximumDateTime\":\"/Date(1606262400000+0000)/\"},{\"Range\":{\"Type\":\"YearToDate:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":\"/Date(1577836800000+0000)/\",\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":null},\"Average\":null,\"Minimum\":{\"Iso\":null,\"Value\":206},\"Maximum\":{\"Iso\":null,\"Value\":398.4},\"MinimumDateTime\":\"/Date(1584576000000+0000)/\",\"MaximumDateTime\":\"/Date(1606262400000+0000)/\"},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P364D\"}},\"Average\":null,\"Minimum\":{\"Iso\":null,\"Value\":206},\"Maximum\":{\"Iso\":null,\"Value\":398.4},\"MinimumDateTime\":\"/Date(1584576000000+0000)/\",\"MaximumDateTime\":\"/Date(1606262400000+0000)/\"},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P50D\"}},\"Average\":{\"Iso\":null,\"Value\":371.624},\"Minimum\":null,\"Maximum\":null,\"MinimumDateTime\":null,\"MaximumDateTime\":null},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P200D\"}},\"Average\":{\"Iso\":null,\"Value\":316.488},\"Minimum\":null,\"Maximum\":null,\"MinimumDateTime\":null,\"MaximumDateTime\":null},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P3M\"}},\"Average\":{\"Iso\":null,\"Value\":373.403076923077},\"Minimum\":null,\"Maximum\":null,\"MinimumDateTime\":null,\"MaximumDateTime\":null}],\"VolumeStatistics\":[{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P50D\"}},\"Average\":4638122.32,\"Minimum\":null,\"Maximum\":null},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P200D\"}},\"Average\":5993496.565,\"Minimum\":null,\"Maximum\":null},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P3M\"}},\"Average\":4666472.55384615,\"Minimum\":null,\"Maximum\":null}]},\"Financials\":{\"OpenInterest\":null,\"LastDividendPerShare\":{\"Iso\":\"HKD\",\"Value\":3.71000004},\"SharesOutstanding\":1267836900,\"Yield\":1.7539267015706805,\"LastEarningsPerShare\":{\"Iso\":\"HKD\",\"Value\":8.3427},\"PriceToEarningsRatio\":45.788533688134535,\"MarketCapitalization\":{\"Iso\":\"HKD\",\"Value\":495717783203.125},\"Previous\":{\"Price\":{\"Iso\":null,\"Value\":383},\"Size\":null,\"Time\":\"/Date(1606262400000+0000)/\"},\"LastDividendExDateTime\":\"/Date(1598918400000+0000)/\",\"ShortInterest\":null,\"DollarsTraded\":453935566,\"ShortInterestNetChange\":null,\"ShortInterestChangePercent\":null,\"DaysToCover\":null,\"PercentOfFloatShorted\":null,\"PercentOfSharesOutstandingShorted\":null,\"PublicFloat\":1189848172.28074,\"MoneyFlow\":null,\"LastSplitDate\":null,\"LastSplitFactor\":null,\"AnnualReportAvailable\":false,\"LastDividendPayDate\":\"/Date(1600128000000+0000)/\",\"LastShortInterestDate\":null,\"MoneyFlowRatio\":null,\"PreviousVolume\":8665708,\"SpecialDividend\":false,\"AnnualizedDividend\":6.7,\"EstimatedPriceToEarningsRatioCurrentYear\":43.35779568058743,\"EstimatedPriceToEarningsRatioNextYear\":37.41718020603741,\"SalesPerEmployee\":6876475.54806071,\"Beta\":1.06388391720509,\"RevenuePerEmployee\":{\"Iso\":\"HKD\",\"Value\":6876475.54806071}},\"BeforeHoursTrading\":null,\"FinancialStatusIndicator\":null,\"RealtimeTrading\":null,\"RealTimeBeforeHoursTrading\":null,\"RealTimeAfterHoursTrading\":null,\"CompositeTrading\":{\"Last\":{\"Price\":{\"Iso\":\"HKD\",\"Value\":382},\"Size\":null,\"Time\":\"/Date(1606397436000+0000)/\"},\"Open\":{\"Iso\":\"HKD\",\"Value\":386.6},\"High\":{\"Iso\":\"HKD\",\"Value\":386.6},\"Low\":{\"Iso\":\"HKD\",\"Value\":380.8},\"NetChange\":{\"Iso\":\"HKD\",\"Value\":-1},\"Volume\":1188313,\"TradeCondition\":null,\"ChangePercent\":-0.26109660574412535,\"IsRealtime\":false},\"CompositeBeforeHoursTrading\":null,\"CompositeAfterHoursTrading\":null,\"IndustryClassification\":{\"Industry\":{\"Instrument\":{\"Types\":[\"Index:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/symbolid/20370825\",\"http://system.marketwatch.com/comstock/symbol/\",\"http://system.marketwatch.com/varasto/varastoid/211348183\",\"http://system.dowjones.com/dowjones/fuid/\",\"http://system.marketwatch.com/dylan/official/INDEX-XX-WSJIXUSSCR\"],\"CommonName\":\"WSJ US Securities Index\",\"Ticker\":\"WSJIXUSSCR\",\"Cusip\":null,\"Sedol\":null,\"Isin\":null,\"Expires\":null,\"Strike\":null,\"Exchange\":{\"Types\":[\"Exchange:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/exchangeid/1338\"],\"CommonName\":\"WSJ Indexes\",\"Ticker\":\"WSJ\",\"CountryCode\":\"XX\",\"MarketCode\":null,\"ExchangeDelay\":null,\"IsoCode\":\"CALCULATED\"},\"Issuer\":null,\"Underlying\":null},\"DisplayName\":\"Securities\"},\"Sector\":{\"Instrument\":{\"Types\":[\"Index:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/symbolid/20370704\",\"http://system.marketwatch.com/comstock/symbol/\",\"http://system.marketwatch.com/varasto/varastoid/211317905\",\"http://system.dowjones.com/dowjones/fuid/\",\"http://system.marketwatch.com/dylan/official/INDEX-XX-WSJMXUSFCL\"],\"CommonName\":\"WSJ US Financial Services Index\",\"Ticker\":\"WSJMXUSFCL\",\"Cusip\":null,\"Sedol\":null,\"Isin\":null,\"Expires\":null,\"Strike\":null,\"Exchange\":{\"Types\":[\"Exchange:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/exchangeid/1338\"],\"CommonName\":\"WSJ Indexes\",\"Ticker\":\"WSJ\",\"CountryCode\":\"XX\",\"MarketCode\":null,\"ExchangeDelay\":null,\"IsoCode\":\"CALCULATED\"},\"Issuer\":null,\"Underlying\":null},\"DisplayName\":\"Financial Services\"}},\"FutureSpecific\":null,\"BondSpecific\":null,\"BlueGrassChannels\":[{\"BlueGrassChannelType\":\"DelayedChannel:http://service.marketwatch.com/ws/2007/10/financialdata\",\"Channel\":\"/zigman2/quotes/200234512/delayed\"}],\"TimeZoneInfo\":{\"TimeZone\":\"China Standard Time\",\"UtcOffsetHours\":8,\"DisplayName\":\"(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi\",\"UtcOffsetMinutes\":0,\"AdjustedDisplayName\":\"(UTC+08:00) China Standard Time\",\"Abbreviation\":\"HKST\",\"ShortAbbreviation\":\"HKT\"},\"DebugInfo\":null,\"CurrencySpecific\":null,\"DatafeedSpecificCurrency\":null,\"Meta\":{\"MarketState\":\"Normal\",\"RealtimeProvider\":\"NLS\",\"DataProvider\":\"FACTSET\",\"DelayType\":\"Intraday\",\"ProposedMantissa\":3,\"CurrencySymbolInfos\":[{\"CurrencyIsoCode\":\"HKD\",\"UnitSymbol\":\"HK$\",\"Suffix\":false}],\"ThirdPartyUrl\":null},\"RoncoSpecific\":null,\"RelatedInstrumentInfo\":null,\"PastCloses\":{\"EndOfPreviousYearClose\":253,\"FiftyTwoWeekAgoClose\":250.4,\"FourWeekAgoClose\":383.4,\"OneHundredFiftySixWeekAgoClose\":235.2,\"OneHundredFourWeekAgoClose\":228.2,\"OneWeekAgoClose\":370.4,\"ThirteenWeekAgoClose\":379.4,\"TwentySixWeekAgoClose\":269.6},\"MovingAverages\":null,\"TradingRange\":null,\"MutualFundSpecific\":{\"LipperIdentifier\":null,\"MorningstarIdentifier\":null,\"NetAssetValue\":null,\"NetAssetValueDate\":null,\"DiscountToNetAssetValue\":null,\"PremiumToNetAssetValue\":null},\"DialectSymbols\":null,\"ReportingStatistics\":null,\"IndexSpecific\":null},\"advancedChartUrl\":\"https://www.wsj.com/market-data/quotes/388/advanced-chart\",\"path\":\"/hk/xhkg/388\",\"relativePerformance\":{\"data\":[{\"name\":\"DJIA\",\"perChange\":\"-0.58%\",\"deltaBarPosNeg\":\"deltaBar-neg\",\"Ticker\":\"DJIA\",\"bgChannel\":\"/zigman2/quotes/210598065/realtime\",\"url\":\"/index/DJIA\"},{\"name\":\"S&P 500\",\"perChange\":\"-0.16%\",\"deltaBarPosNeg\":\"deltaBar-neg\",\"Ticker\":\"SPX\",\"bgChannel\":\"/zigman2/quotes/210599714/realtime\",\"url\":\"/index/SPX\"},{\"name\":\"Financial Services\",\"perChange\":\"0.68%\",\"deltaBarPosNeg\":\"deltaBar-pos\",\"Ticker\":\"WSJMXUSFCL\",\"bgChannel\":\"\",\"url\":\"/index/WSJMXUSFCL\"}]}}}"
+}

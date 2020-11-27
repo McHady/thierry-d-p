@@ -1,0 +1,634 @@
+#us company
+#https://www.wsj.com/market-data/quotes/AAPL?id=%7B"ticker"%3A"aapl"%2C"countryCode"%3A"US"%2C"exchange"%3A""%2C"type"%3A"STOCK"%2C"path"%3A"%2Faapl"%7D&type=quotes_chart
+{
+    "id": "{\"ticker\":\"aapl\",\"countryCode\":\"US\",\"exchange\":\"\",\"type\":\"STOCK\",\"path\":\"/aapl\"}",
+    "type": "quotes_chart",
+    "data": {
+        "quote": {
+            "prevClose": "115.17",
+            "prevCloseDt": "11/24/20",
+            "marketCap": "1.96 T",
+            "F2Week": {
+                "LowHighVal": "53.1525 - 137.98",
+                "LowHighDt": "(03/23/20 - 09/02/20)"
+            },
+            "Avg65DayVol": "144,942,906",
+            "Todays": {
+                "Open": "115.55",
+                "HighLow": "115.17 - 116.75",
+                "Vol": "76,499,234"
+            },
+            "Currency": {
+                "Code": "USD",
+                "Symbol": "$"
+            },
+            "Instrument": {
+                "Types": [
+                    "Stock:http://service.marketwatch.com/ws/2007/05/symbology"
+                ],
+                "Debug": [
+                    "http://system.marketwatch.com/mrkt/symbolid/609",
+                    "http://system.marketwatch.com/comstock/symbol/",
+                    "http://system.marketwatch.com/varasto/varastoid/202934861",
+                    "http://system.dowjones.com/dowjones/fuid/STOCK-XNAS-AAPL",
+                    "http://system.marketwatch.com/dowjones/djid/3122",
+                    "http://system.marketwatch.com/dylan/official/STOCK-US-AAPL"
+                ],
+                "CommonName": "Apple Inc.",
+                "Ticker": "AAPL",
+                "Cusip": "037833100",
+                "Sedol": "2046251",
+                "Isin": "US0378331005",
+                "Expires": null,
+                "Strike": null,
+                "Exchange": {
+                    "Types": [
+                        "Exchange:http://service.marketwatch.com/ws/2007/05/symbology"
+                    ],
+                    "Debug": [
+                        "http://system.marketwatch.com/mrkt/exchangeid/0"
+                    ],
+                    "CommonName": "U.S.: Nasdaq",
+                    "Ticker": "NAS",
+                    "CountryCode": "US",
+                    "MarketCode": null,
+                    "ExchangeDelay": 15,
+                    "IsoCode": "XNAS"
+                },
+                "Issuer": null,
+                "Underlying": null
+            },
+            "bgChannel": "/zigman2/quotes/202934861/composite",
+            "bgChannelDelayed": "/zigman2/quotes/202934861/delayed",
+            "marketState": {
+                "CurrentState": "Thanksgiving",
+                "NextState": "Closed",
+                "TransitionTimeUtc": "2020-11-27T05:00:00Z",
+                "TransitionTimeSpan": "23:09:32.2138759",
+                "CurrentStateElapsed": "00:50:27.7861241"
+            },
+            "timezone": "EST",
+            "internationalTkr": false,
+            "type": "quotes_chart",
+            "topSection": {
+                "middleSection": true,
+                "MSmsg": "AFTER HOURS",
+                "MSvalue": "116.27",
+                "MSchange": "0.23",
+                "MSdeltaBarPosNeg": "deltaBar-pos",
+                "MSDateTime": "7:59 PM EST 11/25/20",
+                "MSperChange": "0.21%",
+                "MSvolMsg": "AFTER HOURS Vol ",
+                "MSvol": "3,667,193",
+                "msg": "AT CLOSE",
+                "value": "116.03",
+                "change": "0.86",
+                "deltaBarPosNeg": "deltaBar-pos",
+                "date": "11/25/20",
+                "DateTime": "4:00 PM EST 11/25/20",
+                "perChange": "0.75%"
+            },
+            "decimal": 4,
+            "chartingSymbol": "quotes_chart/US/XNAS/AAPL"
+        },
+        "quoteData": {
+            "Instrument": {
+                "Types": [
+                    "Stock:http://service.marketwatch.com/ws/2007/05/symbology"
+                ],
+                "Debug": [
+                    "http://system.marketwatch.com/mrkt/symbolid/609",
+                    "http://system.marketwatch.com/comstock/symbol/",
+                    "http://system.marketwatch.com/varasto/varastoid/202934861",
+                    "http://system.dowjones.com/dowjones/fuid/STOCK-XNAS-AAPL",
+                    "http://system.marketwatch.com/dowjones/djid/3122",
+                    "http://system.marketwatch.com/dylan/official/STOCK-US-AAPL"
+                ],
+                "CommonName": "Apple Inc.",
+                "Ticker": "AAPL",
+                "Cusip": "037833100",
+                "Sedol": "2046251",
+                "Isin": "US0378331005",
+                "Expires": null,
+                "Strike": null,
+                "Exchange": {
+                    "Types": [
+                        "Exchange:http://service.marketwatch.com/ws/2007/05/symbology"
+                    ],
+                    "Debug": [
+                        "http://system.marketwatch.com/mrkt/exchangeid/0"
+                    ],
+                    "CommonName": "U.S.: Nasdaq",
+                    "Ticker": "NAS",
+                    "CountryCode": "US",
+                    "MarketCode": null,
+                    "ExchangeDelay": 15,
+                    "IsoCode": "XNAS"
+                },
+                "Issuer": null,
+                "Underlying": null
+            },
+            "UpdatedInstrument": null,
+            "Trading": {
+                "Last": {
+                    "Price": {
+                        "Iso": "USD",
+                        "Value": 116.03
+                    },
+                    "Size": null,
+                    "Time": "/Date(1606320000592+0000)/"
+                },
+                "Open": {
+                    "Iso": "USD",
+                    "Value": 115.55
+                },
+                "High": {
+                    "Iso": "USD",
+                    "Value": 116.75
+                },
+                "Low": {
+                    "Iso": "USD",
+                    "Value": 115.17
+                },
+                "NetChange": {
+                    "Iso": "USD",
+                    "Value": 0.86
+                },
+                "Volume": 76499234,
+                "TradeCondition": null,
+                "ChangePercent": 0.7467222366935834,
+                "IsRealtime": false
+            },
+            "AfterHoursTrading": {
+                "Price": {
+                    "Iso": null,
+                    "Value": 116.26
+                },
+                "Volume": 3667193,
+                "Time": "/Date(1606334399192+0000)/",
+                "NetChange": {
+                    "Iso": null,
+                    "Value": 0.23
+                },
+                "ChangePercent": 0.19822459708696027,
+                "Open": {
+                    "Iso": null,
+                    "Value": 116.03
+                },
+                "High": {
+                    "Iso": null,
+                    "Value": 116.42
+                },
+                "Low": {
+                    "Iso": null,
+                    "Value": 115.96
+                },
+                "TradeCount": 6404,
+                "IsRealtime": false
+            },
+            "Offers": null,
+            "TradingStatistics": {
+                "PriceStatistics": [
+                    {
+                        "Range": {
+                            "Type": "AllData:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": null
+                        },
+                        "Average": null,
+                        "Minimum": {
+                            "Iso": null,
+                            "Value": 0.0636160741640625
+                        },
+                        "Maximum": {
+                            "Iso": null,
+                            "Value": 137.98
+                        },
+                        "MinimumDateTime": "/Date(492998400000+0000)/",
+                        "MaximumDateTime": "/Date(1599004800000+0000)/"
+                    },
+                    {
+                        "Range": {
+                            "Type": "YearToDate:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": "/Date(1577836800000+0000)/",
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": null
+                        },
+                        "Average": null,
+                        "Minimum": {
+                            "Iso": null,
+                            "Value": 53.1525
+                        },
+                        "Maximum": {
+                            "Iso": null,
+                            "Value": 137.98
+                        },
+                        "MinimumDateTime": "/Date(1584921600000+0000)/",
+                        "MaximumDateTime": "/Date(1599004800000+0000)/"
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P364D"
+                            }
+                        },
+                        "Average": null,
+                        "Minimum": {
+                            "Iso": null,
+                            "Value": 53.1525
+                        },
+                        "Maximum": {
+                            "Iso": null,
+                            "Value": 137.98
+                        },
+                        "MinimumDateTime": "/Date(1584921600000+0000)/",
+                        "MaximumDateTime": "/Date(1599004800000+0000)/"
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P50D"
+                            }
+                        },
+                        "Average": {
+                            "Iso": null,
+                            "Value": 115.4704
+                        },
+                        "Minimum": null,
+                        "Maximum": null,
+                        "MinimumDateTime": null,
+                        "MaximumDateTime": null
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P200D"
+                            }
+                        },
+                        "Average": {
+                            "Iso": null,
+                            "Value": 94.042525
+                        },
+                        "Minimum": null,
+                        "Maximum": null,
+                        "MinimumDateTime": null,
+                        "MaximumDateTime": null
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P3M"
+                            }
+                        },
+                        "Average": {
+                            "Iso": null,
+                            "Value": 116.691923076923
+                        },
+                        "Minimum": null,
+                        "Maximum": null,
+                        "MinimumDateTime": null,
+                        "MaximumDateTime": null
+                    }
+                ],
+                "VolumeStatistics": [
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P50D"
+                            }
+                        },
+                        "Average": 129906502.44,
+                        "Minimum": null,
+                        "Maximum": null
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P200D"
+                            }
+                        },
+                        "Average": 167136714.235,
+                        "Minimum": null,
+                        "Maximum": null
+                    },
+                    {
+                        "Range": {
+                            "Type": "Relative:http://service.marketwatch.com/ws/2007/05/utility",
+                            "Begin": null,
+                            "End": "/Date(1606262400000+0000)/",
+                            "Duration": {
+                                "ValueString": "P3M"
+                            }
+                        },
+                        "Average": 144942906.2,
+                        "Minimum": null,
+                        "Maximum": null
+                    }
+                ]
+            },
+            "Financials": {
+                "OpenInterest": null,
+                "LastDividendPerShare": {
+                    "Iso": "USD",
+                    "Value": 0.204999998
+                },
+                "SharesOutstanding": 17001803000,
+                "Yield": 0.7067137809187279,
+                "LastEarningsPerShare": {
+                    "Iso": "USD",
+                    "Value": 3.2668
+                },
+                "PriceToEarningsRatio": 35.51793804334517,
+                "MarketCapitalization": {
+                    "Iso": "USD",
+                    "Value": 1958097589786.74
+                },
+                "Previous": {
+                    "Price": {
+                        "Iso": null,
+                        "Value": 115.17
+                    },
+                    "Size": null,
+                    "Time": "/Date(1606176000000+0000)/"
+                },
+                "LastDividendExDateTime": "/Date(1604620800000+0000)/",
+                "ShortInterest": 87564487,
+                "DollarsTraded": 8876206121.02,
+                "ShortInterestNetChange": 7036091,
+                "ShortInterestChangePercent": 8.737403635855356,
+                "DaysToCover": 0.6041308905395744,
+                "PercentOfFloatShorted": 0.5155199133840971,
+                "PercentOfSharesOutstandingShorted": 0.5150305941081661,
+                "PublicFloat": 16985665291.8,
+                "MoneyFlow": null,
+                "LastSplitDate": "/Date(1598832000000+0000)/",
+                "LastSplitFactor": 0.25,
+                "AnnualReportAvailable": false,
+                "LastDividendPayDate": "/Date(1605139200000+0000)/",
+                "LastShortInterestDate": "/Date(1605225600000+0000)/",
+                "MoneyFlowRatio": null,
+                "PreviousVolume": 76499234,
+                "SpecialDividend": false,
+                "AnnualizedDividend": 0.82,
+                "EstimatedPriceToEarningsRatioCurrentYear": 29.182412082419,
+                "EstimatedPriceToEarningsRatioNextYear": 26.79357997836285,
+                "SalesPerEmployee": 1864965.98639456,
+                "Beta": 1.17112096159298,
+                "RevenuePerEmployee": {
+                    "Iso": "USD",
+                    "Value": 1864965.98639456
+                }
+            },
+            "BeforeHoursTrading": null,
+            "FinancialStatusIndicator": null,
+            "RealtimeTrading": null,
+            "RealTimeBeforeHoursTrading": null,
+            "RealTimeAfterHoursTrading": null,
+            "CompositeTrading": {
+                "Last": {
+                    "Price": {
+                        "Iso": "USD",
+                        "Value": 116.03
+                    },
+                    "Size": null,
+                    "Time": "/Date(1606320000592+0000)/"
+                },
+                "Open": {
+                    "Iso": "USD",
+                    "Value": 115.55
+                },
+                "High": {
+                    "Iso": "USD",
+                    "Value": 116.75
+                },
+                "Low": {
+                    "Iso": "USD",
+                    "Value": 115.17
+                },
+                "NetChange": {
+                    "Iso": null,
+                    "Value": 0.86
+                },
+                "Volume": 76499234,
+                "TradeCondition": null,
+                "ChangePercent": 0.7467222366935834,
+                "IsRealtime": false
+            },
+            "CompositeBeforeHoursTrading": null,
+            "CompositeAfterHoursTrading": {
+                "Price": {
+                    "Iso": null,
+                    "Value": 116.27
+                },
+                "Volume": 3667193,
+                "Time": "/Date(1606334399192+0000)/",
+                "NetChange": {
+                    "Iso": null,
+                    "Value": 0.230000000000004
+                },
+                "ChangePercent": 0.20684305782987158,
+                "Open": null,
+                "High": null,
+                "Low": null,
+                "TradeCount": 0,
+                "IsRealtime": false
+            },
+            "IndustryClassification": {
+                "Industry": {
+                    "Instrument": {
+                        "Types": [
+                            "Index:http://service.marketwatch.com/ws/2007/05/symbology"
+                        ],
+                        "Debug": [
+                            "http://system.marketwatch.com/mrkt/symbolid/20370766",
+                            "http://system.marketwatch.com/comstock/symbol/",
+                            "http://system.marketwatch.com/varasto/varastoid/211348124",
+                            "http://system.dowjones.com/dowjones/fuid/",
+                            "http://system.marketwatch.com/dylan/official/INDEX-XX-WSJIXUSCPR"
+                        ],
+                        "CommonName": "WSJ US Computers/Consumer Electronics Index",
+                        "Ticker": "WSJIXUSCPR",
+                        "Cusip": null,
+                        "Sedol": null,
+                        "Isin": null,
+                        "Expires": null,
+                        "Strike": null,
+                        "Exchange": {
+                            "Types": [
+                                "Exchange:http://service.marketwatch.com/ws/2007/05/symbology"
+                            ],
+                            "Debug": [
+                                "http://system.marketwatch.com/mrkt/exchangeid/1338"
+                            ],
+                            "CommonName": "WSJ Indexes",
+                            "Ticker": "WSJ",
+                            "CountryCode": "XX",
+                            "MarketCode": null,
+                            "ExchangeDelay": null,
+                            "IsoCode": "CALCULATED"
+                        },
+                        "Issuer": null,
+                        "Underlying": null
+                    },
+                    "DisplayName": "Computers/Consumer Electronics"
+                },
+                "Sector": {
+                    "Instrument": {
+                        "Types": [
+                            "Index:http://service.marketwatch.com/ws/2007/05/symbology"
+                        ],
+                        "Debug": [
+                            "http://system.marketwatch.com/mrkt/symbolid/20370711",
+                            "http://system.marketwatch.com/comstock/symbol/",
+                            "http://system.marketwatch.com/varasto/varastoid/211317909",
+                            "http://system.dowjones.com/dowjones/fuid/",
+                            "http://system.marketwatch.com/dylan/official/INDEX-XX-WSJMXUSTEC"
+                        ],
+                        "CommonName": "WSJ US Technology Index",
+                        "Ticker": "WSJMXUSTEC",
+                        "Cusip": null,
+                        "Sedol": null,
+                        "Isin": null,
+                        "Expires": null,
+                        "Strike": null,
+                        "Exchange": {
+                            "Types": [
+                                "Exchange:http://service.marketwatch.com/ws/2007/05/symbology"
+                            ],
+                            "Debug": [
+                                "http://system.marketwatch.com/mrkt/exchangeid/1338"
+                            ],
+                            "CommonName": "WSJ Indexes",
+                            "Ticker": "WSJ",
+                            "CountryCode": "XX",
+                            "MarketCode": null,
+                            "ExchangeDelay": null,
+                            "IsoCode": "CALCULATED"
+                        },
+                        "Issuer": null,
+                        "Underlying": null
+                    },
+                    "DisplayName": "Technology"
+                }
+            },
+            "FutureSpecific": null,
+            "BondSpecific": null,
+            "BlueGrassChannels": [
+                {
+                    "BlueGrassChannelType": "DelayedChannel:http://service.marketwatch.com/ws/2007/10/financialdata",
+                    "Channel": "/zigman2/quotes/202934861/delayed"
+                },
+                {
+                    "BlueGrassChannelType": "CompositeChannel:http://service.marketwatch.com/ws/2007/10/financialdata",
+                    "Channel": "/zigman2/quotes/202934861/composite"
+                },
+                {
+                    "BlueGrassChannelType": "RealtimeChannel:http://service.marketwatch.com/ws/2007/10/financialdata",
+                    "Channel": "/zigman2/quotes/202934861/lastsale"
+                }
+            ],
+            "TimeZoneInfo": {
+                "TimeZone": "Eastern Standard Time",
+                "UtcOffsetHours": -5,
+                "DisplayName": "(UTC-05:00) Eastern Time (US & Canada)",
+                "UtcOffsetMinutes": 0,
+                "AdjustedDisplayName": "(UTC-05:00) Eastern Standard Time",
+                "Abbreviation": "EST",
+                "ShortAbbreviation": "ET"
+            },
+            "DebugInfo": null,
+            "CurrencySpecific": null,
+            "DatafeedSpecificCurrency": null,
+            "Meta": {
+                "MarketState": "Closed",
+                "RealtimeProvider": "NLS",
+                "DataProvider": "FACTSET",
+                "DelayType": "Intraday",
+                "ProposedMantissa": 4,
+                "CurrencySymbolInfos": [
+                    {
+                        "CurrencyIsoCode": "USD",
+                        "UnitSymbol": "$",
+                        "Suffix": false
+                    }
+                ],
+                "ThirdPartyUrl": null
+            },
+            "RoncoSpecific": null,
+            "RelatedInstrumentInfo": null,
+            "PastCloses": {
+                "EndOfPreviousYearClose": 73.4125,
+                "FiftyTwoWeekAgoClose": 66.96,
+                "FourWeekAgoClose": 111.2,
+                "OneHundredFiftySixWeekAgoClose": 42.37,
+                "OneHundredFourWeekAgoClose": 45.235,
+                "OneWeekAgoClose": 118.03,
+                "ThirteenWeekAgoClose": 126.5225,
+                "TwentySixWeekAgoClose": 79.5275
+            },
+            "MovingAverages": null,
+            "TradingRange": null,
+            "MutualFundSpecific": {
+                "LipperIdentifier": null,
+                "MorningstarIdentifier": null,
+                "NetAssetValue": null,
+                "NetAssetValueDate": null,
+                "DiscountToNetAssetValue": null,
+                "PremiumToNetAssetValue": null
+            },
+            "DialectSymbols": null,
+            "ReportingStatistics": null,
+            "IndexSpecific": null
+        },
+        "advancedChartUrl": "https://www.wsj.com/market-data/quotes/AAPL/advanced-chart",
+        "path": "/aapl",
+        "relativePerformance": {
+            "data": [
+                {
+                    "name": "DJIA",
+                    "perChange": "-0.58%",
+                    "deltaBarPosNeg": "deltaBar-neg",
+                    "Ticker": "DJIA",
+                    "bgChannel": "/zigman2/quotes/210598065/realtime",
+                    "url": "/index/DJIA"
+                },
+                {
+                    "name": "S&P 500",
+                    "perChange": "-0.16%",
+                    "deltaBarPosNeg": "deltaBar-neg",
+                    "Ticker": "SPX",
+                    "bgChannel": "/zigman2/quotes/210599714/realtime",
+                    "url": "/index/SPX"
+                },
+                {
+                    "name": "Technology",
+                    "perChange": "1.58%",
+                    "deltaBarPosNeg": "deltaBar-pos",
+                    "Ticker": "WSJMXUSTEC",
+                    "bgChannel": "",
+                    "url": "/index/WSJMXUSTEC"
+                }
+            ]
+        }
+    },
+    "hash": "{\"id\":\"{\\\"ticker\\\":\\\"aapl\\\",\\\"countryCode\\\":\\\"US\\\",\\\"exchange\\\":\\\"\\\",\\\"type\\\":\\\"STOCK\\\",\\\"path\\\":\\\"/aapl\\\"}\",\"type\":\"quotes_chart\",\"data\":{\"quote\":{\"prevClose\":\"115.17\",\"prevCloseDt\":\"11/24/20\",\"marketCap\":\"1.96 T\",\"F2Week\":{\"LowHighVal\":\"53.1525 - 137.98\",\"LowHighDt\":\"(03/23/20 - 09/02/20)\"},\"Avg65DayVol\":\"144,942,906\",\"Todays\":{\"Open\":\"115.55\",\"HighLow\":\"115.17 - 116.75\",\"Vol\":\"76,499,234\"},\"Currency\":{\"Code\":\"USD\",\"Symbol\":\"$\"},\"Instrument\":{\"Types\":[\"Stock:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/symbolid/609\",\"http://system.marketwatch.com/comstock/symbol/\",\"http://system.marketwatch.com/varasto/varastoid/202934861\",\"http://system.dowjones.com/dowjones/fuid/STOCK-XNAS-AAPL\",\"http://system.marketwatch.com/dowjones/djid/3122\",\"http://system.marketwatch.com/dylan/official/STOCK-US-AAPL\"],\"CommonName\":\"Apple Inc.\",\"Ticker\":\"AAPL\",\"Cusip\":\"037833100\",\"Sedol\":\"2046251\",\"Isin\":\"US0378331005\",\"Expires\":null,\"Strike\":null,\"Exchange\":{\"Types\":[\"Exchange:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/exchangeid/0\"],\"CommonName\":\"U.S.: Nasdaq\",\"Ticker\":\"NAS\",\"CountryCode\":\"US\",\"MarketCode\":null,\"ExchangeDelay\":15,\"IsoCode\":\"XNAS\"},\"Issuer\":null,\"Underlying\":null},\"bgChannel\":\"/zigman2/quotes/202934861/composite\",\"bgChannelDelayed\":\"/zigman2/quotes/202934861/delayed\",\"marketState\":{\"CurrentState\":\"Thanksgiving\",\"NextState\":\"Closed\",\"TransitionTimeUtc\":\"2020-11-27T05:00:00Z\",\"TransitionTimeSpan\":\"23:09:32.2138759\",\"CurrentStateElapsed\":\"00:50:27.7861241\"},\"timezone\":\"EST\",\"internationalTkr\":false,\"type\":\"quotes_chart\",\"topSection\":{\"middleSection\":true,\"MSmsg\":\"AFTER HOURS\",\"MSvalue\":\"116.27\",\"MSchange\":\"0.23\",\"MSdeltaBarPosNeg\":\"deltaBar-pos\",\"MSDateTime\":\"7:59 PM EST 11/25/20\",\"MSperChange\":\"0.21%\",\"MSvolMsg\":\"AFTER HOURS Vol \",\"MSvol\":\"3,667,193\",\"msg\":\"AT CLOSE\",\"value\":\"116.03\",\"change\":\"0.86\",\"deltaBarPosNeg\":\"deltaBar-pos\",\"date\":\"11/25/20\",\"DateTime\":\"4:00 PM EST 11/25/20\",\"perChange\":\"0.75%\"},\"decimal\":4,\"chartingSymbol\":\"quotes_chart/US/XNAS/AAPL\"},\"quoteData\":{\"Instrument\":{\"Types\":[\"Stock:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/symbolid/609\",\"http://system.marketwatch.com/comstock/symbol/\",\"http://system.marketwatch.com/varasto/varastoid/202934861\",\"http://system.dowjones.com/dowjones/fuid/STOCK-XNAS-AAPL\",\"http://system.marketwatch.com/dowjones/djid/3122\",\"http://system.marketwatch.com/dylan/official/STOCK-US-AAPL\"],\"CommonName\":\"Apple Inc.\",\"Ticker\":\"AAPL\",\"Cusip\":\"037833100\",\"Sedol\":\"2046251\",\"Isin\":\"US0378331005\",\"Expires\":null,\"Strike\":null,\"Exchange\":{\"Types\":[\"Exchange:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/exchangeid/0\"],\"CommonName\":\"U.S.: Nasdaq\",\"Ticker\":\"NAS\",\"CountryCode\":\"US\",\"MarketCode\":null,\"ExchangeDelay\":15,\"IsoCode\":\"XNAS\"},\"Issuer\":null,\"Underlying\":null},\"UpdatedInstrument\":null,\"Trading\":{\"Last\":{\"Price\":{\"Iso\":\"USD\",\"Value\":116.03},\"Size\":null,\"Time\":\"/Date(1606320000592+0000)/\"},\"Open\":{\"Iso\":\"USD\",\"Value\":115.55},\"High\":{\"Iso\":\"USD\",\"Value\":116.75},\"Low\":{\"Iso\":\"USD\",\"Value\":115.17},\"NetChange\":{\"Iso\":\"USD\",\"Value\":0.86},\"Volume\":76499234,\"TradeCondition\":null,\"ChangePercent\":0.7467222366935834,\"IsRealtime\":false},\"AfterHoursTrading\":{\"Price\":{\"Iso\":null,\"Value\":116.26},\"Volume\":3667193,\"Time\":\"/Date(1606334399192+0000)/\",\"NetChange\":{\"Iso\":null,\"Value\":0.23},\"ChangePercent\":0.19822459708696027,\"Open\":{\"Iso\":null,\"Value\":116.03},\"High\":{\"Iso\":null,\"Value\":116.42},\"Low\":{\"Iso\":null,\"Value\":115.96},\"TradeCount\":6404,\"IsRealtime\":false},\"Offers\":null,\"TradingStatistics\":{\"PriceStatistics\":[{\"Range\":{\"Type\":\"AllData:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":null},\"Average\":null,\"Minimum\":{\"Iso\":null,\"Value\":0.0636160741640625},\"Maximum\":{\"Iso\":null,\"Value\":137.98},\"MinimumDateTime\":\"/Date(492998400000+0000)/\",\"MaximumDateTime\":\"/Date(1599004800000+0000)/\"},{\"Range\":{\"Type\":\"YearToDate:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":\"/Date(1577836800000+0000)/\",\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":null},\"Average\":null,\"Minimum\":{\"Iso\":null,\"Value\":53.1525},\"Maximum\":{\"Iso\":null,\"Value\":137.98},\"MinimumDateTime\":\"/Date(1584921600000+0000)/\",\"MaximumDateTime\":\"/Date(1599004800000+0000)/\"},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P364D\"}},\"Average\":null,\"Minimum\":{\"Iso\":null,\"Value\":53.1525},\"Maximum\":{\"Iso\":null,\"Value\":137.98},\"MinimumDateTime\":\"/Date(1584921600000+0000)/\",\"MaximumDateTime\":\"/Date(1599004800000+0000)/\"},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P50D\"}},\"Average\":{\"Iso\":null,\"Value\":115.4704},\"Minimum\":null,\"Maximum\":null,\"MinimumDateTime\":null,\"MaximumDateTime\":null},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P200D\"}},\"Average\":{\"Iso\":null,\"Value\":94.042525},\"Minimum\":null,\"Maximum\":null,\"MinimumDateTime\":null,\"MaximumDateTime\":null},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P3M\"}},\"Average\":{\"Iso\":null,\"Value\":116.691923076923},\"Minimum\":null,\"Maximum\":null,\"MinimumDateTime\":null,\"MaximumDateTime\":null}],\"VolumeStatistics\":[{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P50D\"}},\"Average\":129906502.44,\"Minimum\":null,\"Maximum\":null},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P200D\"}},\"Average\":167136714.235,\"Minimum\":null,\"Maximum\":null},{\"Range\":{\"Type\":\"Relative:http://service.marketwatch.com/ws/2007/05/utility\",\"Begin\":null,\"End\":\"/Date(1606262400000+0000)/\",\"Duration\":{\"ValueString\":\"P3M\"}},\"Average\":144942906.2,\"Minimum\":null,\"Maximum\":null}]},\"Financials\":{\"OpenInterest\":null,\"LastDividendPerShare\":{\"Iso\":\"USD\",\"Value\":0.204999998},\"SharesOutstanding\":17001803000,\"Yield\":0.7067137809187279,\"LastEarningsPerShare\":{\"Iso\":\"USD\",\"Value\":3.2668},\"PriceToEarningsRatio\":35.51793804334517,\"MarketCapitalization\":{\"Iso\":\"USD\",\"Value\":1958097589786.74},\"Previous\":{\"Price\":{\"Iso\":null,\"Value\":115.17},\"Size\":null,\"Time\":\"/Date(1606176000000+0000)/\"},\"LastDividendExDateTime\":\"/Date(1604620800000+0000)/\",\"ShortInterest\":87564487,\"DollarsTraded\":8876206121.02,\"ShortInterestNetChange\":7036091,\"ShortInterestChangePercent\":8.737403635855356,\"DaysToCover\":0.6041308905395744,\"PercentOfFloatShorted\":0.5155199133840971,\"PercentOfSharesOutstandingShorted\":0.5150305941081661,\"PublicFloat\":16985665291.8,\"MoneyFlow\":null,\"LastSplitDate\":\"/Date(1598832000000+0000)/\",\"LastSplitFactor\":0.25,\"AnnualReportAvailable\":false,\"LastDividendPayDate\":\"/Date(1605139200000+0000)/\",\"LastShortInterestDate\":\"/Date(1605225600000+0000)/\",\"MoneyFlowRatio\":null,\"PreviousVolume\":76499234,\"SpecialDividend\":false,\"AnnualizedDividend\":0.82,\"EstimatedPriceToEarningsRatioCurrentYear\":29.182412082419,\"EstimatedPriceToEarningsRatioNextYear\":26.79357997836285,\"SalesPerEmployee\":1864965.98639456,\"Beta\":1.17112096159298,\"RevenuePerEmployee\":{\"Iso\":\"USD\",\"Value\":1864965.98639456}},\"BeforeHoursTrading\":null,\"FinancialStatusIndicator\":null,\"RealtimeTrading\":null,\"RealTimeBeforeHoursTrading\":null,\"RealTimeAfterHoursTrading\":null,\"CompositeTrading\":{\"Last\":{\"Price\":{\"Iso\":\"USD\",\"Value\":116.03},\"Size\":null,\"Time\":\"/Date(1606320000592+0000)/\"},\"Open\":{\"Iso\":\"USD\",\"Value\":115.55},\"High\":{\"Iso\":\"USD\",\"Value\":116.75},\"Low\":{\"Iso\":\"USD\",\"Value\":115.17},\"NetChange\":{\"Iso\":null,\"Value\":0.86},\"Volume\":76499234,\"TradeCondition\":null,\"ChangePercent\":0.7467222366935834,\"IsRealtime\":false},\"CompositeBeforeHoursTrading\":null,\"CompositeAfterHoursTrading\":{\"Price\":{\"Iso\":null,\"Value\":116.27},\"Volume\":3667193,\"Time\":\"/Date(1606334399192+0000)/\",\"NetChange\":{\"Iso\":null,\"Value\":0.230000000000004},\"ChangePercent\":0.20684305782987158,\"Open\":null,\"High\":null,\"Low\":null,\"TradeCount\":0,\"IsRealtime\":false},\"IndustryClassification\":{\"Industry\":{\"Instrument\":{\"Types\":[\"Index:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/symbolid/20370766\",\"http://system.marketwatch.com/comstock/symbol/\",\"http://system.marketwatch.com/varasto/varastoid/211348124\",\"http://system.dowjones.com/dowjones/fuid/\",\"http://system.marketwatch.com/dylan/official/INDEX-XX-WSJIXUSCPR\"],\"CommonName\":\"WSJ US Computers/Consumer Electronics Index\",\"Ticker\":\"WSJIXUSCPR\",\"Cusip\":null,\"Sedol\":null,\"Isin\":null,\"Expires\":null,\"Strike\":null,\"Exchange\":{\"Types\":[\"Exchange:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/exchangeid/1338\"],\"CommonName\":\"WSJ Indexes\",\"Ticker\":\"WSJ\",\"CountryCode\":\"XX\",\"MarketCode\":null,\"ExchangeDelay\":null,\"IsoCode\":\"CALCULATED\"},\"Issuer\":null,\"Underlying\":null},\"DisplayName\":\"Computers/Consumer Electronics\"},\"Sector\":{\"Instrument\":{\"Types\":[\"Index:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/symbolid/20370711\",\"http://system.marketwatch.com/comstock/symbol/\",\"http://system.marketwatch.com/varasto/varastoid/211317909\",\"http://system.dowjones.com/dowjones/fuid/\",\"http://system.marketwatch.com/dylan/official/INDEX-XX-WSJMXUSTEC\"],\"CommonName\":\"WSJ US Technology Index\",\"Ticker\":\"WSJMXUSTEC\",\"Cusip\":null,\"Sedol\":null,\"Isin\":null,\"Expires\":null,\"Strike\":null,\"Exchange\":{\"Types\":[\"Exchange:http://service.marketwatch.com/ws/2007/05/symbology\"],\"Debug\":[\"http://system.marketwatch.com/mrkt/exchangeid/1338\"],\"CommonName\":\"WSJ Indexes\",\"Ticker\":\"WSJ\",\"CountryCode\":\"XX\",\"MarketCode\":null,\"ExchangeDelay\":null,\"IsoCode\":\"CALCULATED\"},\"Issuer\":null,\"Underlying\":null},\"DisplayName\":\"Technology\"}},\"FutureSpecific\":null,\"BondSpecific\":null,\"BlueGrassChannels\":[{\"BlueGrassChannelType\":\"DelayedChannel:http://service.marketwatch.com/ws/2007/10/financialdata\",\"Channel\":\"/zigman2/quotes/202934861/delayed\"},{\"BlueGrassChannelType\":\"CompositeChannel:http://service.marketwatch.com/ws/2007/10/financialdata\",\"Channel\":\"/zigman2/quotes/202934861/composite\"},{\"BlueGrassChannelType\":\"RealtimeChannel:http://service.marketwatch.com/ws/2007/10/financialdata\",\"Channel\":\"/zigman2/quotes/202934861/lastsale\"}],\"TimeZoneInfo\":{\"TimeZone\":\"Eastern Standard Time\",\"UtcOffsetHours\":-5,\"DisplayName\":\"(UTC-05:00) Eastern Time (US & Canada)\",\"UtcOffsetMinutes\":0,\"AdjustedDisplayName\":\"(UTC-05:00) Eastern Standard Time\",\"Abbreviation\":\"EST\",\"ShortAbbreviation\":\"ET\"},\"DebugInfo\":null,\"CurrencySpecific\":null,\"DatafeedSpecificCurrency\":null,\"Meta\":{\"MarketState\":\"Closed\",\"RealtimeProvider\":\"NLS\",\"DataProvider\":\"FACTSET\",\"DelayType\":\"Intraday\",\"ProposedMantissa\":4,\"CurrencySymbolInfos\":[{\"CurrencyIsoCode\":\"USD\",\"UnitSymbol\":\"$\",\"Suffix\":false}],\"ThirdPartyUrl\":null},\"RoncoSpecific\":null,\"RelatedInstrumentInfo\":null,\"PastCloses\":{\"EndOfPreviousYearClose\":73.4125,\"FiftyTwoWeekAgoClose\":66.96,\"FourWeekAgoClose\":111.2,\"OneHundredFiftySixWeekAgoClose\":42.37,\"OneHundredFourWeekAgoClose\":45.235,\"OneWeekAgoClose\":118.03,\"ThirteenWeekAgoClose\":126.5225,\"TwentySixWeekAgoClose\":79.5275},\"MovingAverages\":null,\"TradingRange\":null,\"MutualFundSpecific\":{\"LipperIdentifier\":null,\"MorningstarIdentifier\":null,\"NetAssetValue\":null,\"NetAssetValueDate\":null,\"DiscountToNetAssetValue\":null,\"PremiumToNetAssetValue\":null},\"DialectSymbols\":null,\"ReportingStatistics\":null,\"IndexSpecific\":null},\"advancedChartUrl\":\"https://www.wsj.com/market-data/quotes/AAPL/advanced-chart\",\"path\":\"/aapl\",\"relativePerformance\":{\"data\":[{\"name\":\"DJIA\",\"perChange\":\"-0.58%\",\"deltaBarPosNeg\":\"deltaBar-neg\",\"Ticker\":\"DJIA\",\"bgChannel\":\"/zigman2/quotes/210598065/realtime\",\"url\":\"/index/DJIA\"},{\"name\":\"S&P 500\",\"perChange\":\"-0.16%\",\"deltaBarPosNeg\":\"deltaBar-neg\",\"Ticker\":\"SPX\",\"bgChannel\":\"/zigman2/quotes/210599714/realtime\",\"url\":\"/index/SPX\"},{\"name\":\"Technology\",\"perChange\":\"1.58%\",\"deltaBarPosNeg\":\"deltaBar-pos\",\"Ticker\":\"WSJMXUSTEC\",\"bgChannel\":\"\",\"url\":\"/index/WSJMXUSTEC\"}]}}}"
+}
