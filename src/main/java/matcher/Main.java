@@ -1,19 +1,11 @@
 package matcher;
 
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import matcher.perform.PerformManager;
 import matcher.url.UrlGenerator;
-import org.apache.poi.ss.usermodel.CellType;
-import org.jsoup.Jsoup;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
+
 
 
 public class Main {
@@ -22,14 +14,11 @@ public class Main {
     public static void main(String[] args){
 
         var config = new Configuration("config.ini");
-        var urlGenerator = new UrlGenerator(config.getUrlRoot(), null);
-        var wsjFiles = Arrays.stream(Objects.requireNonNull(new File(config.getWSJFileFolder()).listFiles()))
-                .filter(file -> file.isFile() && file.getName().contains("list.xlsx")).map(file -> config.getWSJFileFolder() + "/" + file.getName()).collect(Collectors.toList());
-        System.out.println(String.join(", ", wsjFiles));
+        var urlGenerator = new UrlGenerator(config.getUrlRoot());
+        var fileManager = new FileManager(config);
 
-        var resultFiles = Arrays.stream(Objects.requireNonNull(new File(config.getResultFileFolder()).listFiles()))
-                .filter(file -> file.isFile() && file.getName().contains("3-result.xlsx")).map(file -> config.getResultFileFolder() + "/" + file.getName()).collect(Collectors.toList());
-        System.out.println(String.join(", ", resultFiles));
+        var wsjFiles = fileManager.getWSJFiles();
+        var resultFiles = fileManager.getResultFiles();
 
         var service = Executors.newFixedThreadPool(wsjFiles.size());
         for (var wsjFile: wsjFiles) {
@@ -40,7 +29,7 @@ public class Main {
                 try (var wsjExcel = new ExcelManager(wsjFile)) {
 
                     var wsjRowNumber = wsjExcel.getRowNumber();
-                    var country = new File(wsjFile).getName().replace(" list.xlsx", "");
+                    var country = fileManager.getCountryByFileName(wsjFile);
                     var resultFile = resultFiles.stream().filter(filename -> filename.contains(country)).findFirst().get();
                     try (var resultExcel = new ExcelManager(resultFile)){
                         for (var i = 1; i < wsjRowNumber; i++){
@@ -55,30 +44,7 @@ public class Main {
 
                             var url = urlGenerator.generate(countryCode, prefix, wsjCode);
                             try {
-                                var price = loadPriceFromUrl(url);
-
-                                var pieces = price.split("\\.");
-                                var priceBuilder = new StringBuilder();
-                                for (var p = 0; p < pieces.length; p++) {
-
-                                    if (p == 0){
-
-                                        priceBuilder.append(pieces[p]);
-                                    }
-                                    else if (p == pieces.length-1){
-                                        priceBuilder.append(",").append(pieces[p]);
-                                    }
-                                    else
-                                    {
-                                        priceBuilder.append(".").append(pieces[p]);
-                                    }
-
-                                }
-                                price = priceBuilder.toString();
-                                System.out.printf("Country: %s, Company: %s, Price: %s%n", country, wsjCode, price);
-
-                                var resultRowIndex = resultExcel.getRowNumberByCellValue(config.getResultKeyColumn(), tableKey);
-                                resultExcel.setCellValue(resultRowIndex, config.getResultDestinationColumn(), price, CellType.STRING);
+                                PerformManager.perform(config.getResultFileSuffix(), url, resultExcel, country, wsjCode, tableKey);
                             } catch (Exception e) {
                                 System.out.printf("Can't get URL %s", url);
                                 e.printStackTrace();
@@ -94,13 +60,5 @@ public class Main {
         }
         service.shutdown();
 
-    }
-
-    private static String loadPriceFromUrl(String url) throws IOException {
-
-        var json = Jsoup.connect(url).ignoreContentType(true).get().text();
-
-        var jObject = (JsonObject) new JsonParser().parse(json);
-        return jObject.get("data").getAsJsonObject().get("quote").getAsJsonObject().get("topSection").getAsJsonObject().get("value").getAsString();
     }
 }

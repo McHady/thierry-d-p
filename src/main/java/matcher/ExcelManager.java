@@ -1,10 +1,11 @@
 package matcher;
 
+import org.apache.poi.hssf.usermodel.HSSFDataFormat;
+import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.util.CellReference;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.xssf.model.StylesTable;
+import org.apache.poi.xssf.usermodel.*;
 
 import java.io.*;
 
@@ -100,6 +101,18 @@ public class ExcelManager implements Closeable {
 
         cell.setCellValue(value);
         cell.setCellType(cellType);
+    }
+
+    public void setCellValue(Integer rowIndex, String columnName, Double value) {
+        setCellValue(0, rowIndex, columnName, value);
+    }
+    public void setCellValue(Integer sheetIndex, Integer rowIndex, String columnName, Double value){
+        var cell = this.getCell(sheetIndex, rowIndex, columnName, true);
+        cell.setCellValue(value);
+        cell.setCellType(CellType.NUMERIC);
+        var style = this.workBook.createCellStyle();
+        style.setDataFormat(HSSFDataFormat.getBuiltinFormat("0.0"));
+        cell.setCellStyle(style);
     }
 
     public  Integer getRowNumberByCellValue(String columnName, String value){

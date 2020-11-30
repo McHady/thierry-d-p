@@ -3,11 +3,9 @@ package matcher;
 import java.io.*;
 import java.util.Properties;
 
-public class Configuration {
+public class Configuration implements Configurationable {
 
     private String resultFileFolder = ".";
-    private String resultDestinationColumn = "M";
-    private String resultKeyColumn = "B";
 
     private String wsjFileFolder = ".";
     private String wsjCountryCodeColumn = "AH";
@@ -16,6 +14,7 @@ public class Configuration {
     private String wsjKeyColumn = "B";
 
     private String urlRoot = "https://www.wsj.com/market-data/quotes/";
+    private String resultFileSuffix = "3-result";
 
     public Configuration(String filename) {
 
@@ -33,8 +32,7 @@ public class Configuration {
             this.wsjKeyColumn = properties.getProperty("WSJ_KEY_COLUMN", "B");
 
             this.resultFileFolder = properties.getProperty("RESULT_FILE_FOLDER", ".");
-            this.resultDestinationColumn = properties.getProperty("RESULT_DESTINATION_COLUMN", "M");
-            this.resultKeyColumn = properties.getProperty("RESULT_KEY_COLUMN", "B");
+            this.resultFileSuffix = properties.getProperty("RESULT_FILE_SUFFIX", "3-result");
 
             this.urlRoot = properties.getProperty("URL_ROOT", "https://www.wsj.com/market-data/quotes/");
             if (!this.urlRoot.endsWith("/"))
@@ -67,14 +65,6 @@ public class Configuration {
         return wsjKeyColumn;
     }
 
-    public String getResultDestinationColumn() {
-        return resultDestinationColumn;
-    }
-
-    public String getResultKeyColumn() {
-        return resultKeyColumn;
-    }
-
     public String getResultFileFolder() {
         return resultFileFolder;
     }
@@ -82,4 +72,10 @@ public class Configuration {
     public String getWSJFileFolder() {
         return wsjFileFolder;
     }
+
+    @Override
+    public String getResultFileSuffix() {
+        return this.resultFileSuffix;
+    }
 }
+

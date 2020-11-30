@@ -18,6 +18,10 @@ public class UrlGenerator {
         this(new CountryCodeIsEmptyBuildStrategy(emptyCriteria), urlRoot);
     }
 
+    public  UrlGenerator(String urlRoot) {
+        this(urlRoot, null);
+    }
+
     public String generate(String countryCode, String prefix, String wsjCode){
 
         var builder = this.buildStrategy.resolve(countryCode, prefix, wsjCode);
