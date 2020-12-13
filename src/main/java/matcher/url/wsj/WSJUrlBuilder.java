@@ -1,4 +1,6 @@
-package matcher.url;
+package matcher.url.wsj;
+
+import matcher.url.UrlBuilder;
 
 public abstract class WSJUrlBuilder extends UrlBuilder {
 

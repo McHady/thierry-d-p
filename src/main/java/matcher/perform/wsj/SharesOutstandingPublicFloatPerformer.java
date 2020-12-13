@@ -1,12 +1,9 @@
-package matcher.perform;
+package matcher.perform.wsj;
 
 import com.google.gson.JsonObject;
 import matcher.ExcelManager;
-import org.apache.poi.ss.usermodel.CellType;
 
-import java.math.BigDecimal;
-
-public class SharesOutstandingPublicFloatPerformer extends Performer<DataPair> {
+public class SharesOutstandingPublicFloatPerformer extends WSJPerformer<DataPair> {
 
     @Override
     protected DataPair getJsonData(JsonObject jsonObject) {

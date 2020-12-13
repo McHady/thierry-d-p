@@ -1,4 +1,4 @@
-package matcher.perform;
+package matcher.perform.wsj;
 
 public class DataPair {
 

@@ -13,7 +13,10 @@ public interface Configurationable {
 
     String getResultFileFolder();
 
-    String getWSJFileFolder();
+    String getInputFileFolder();
 
     String getResultFileSuffix();
+
+    int getScriptCode();
+    Integer getInvestingDelay();
 }

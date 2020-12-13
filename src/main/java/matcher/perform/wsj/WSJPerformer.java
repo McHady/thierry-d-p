@@ -1,4 +1,4 @@
-package matcher.perform;
+package matcher.perform.wsj;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -7,7 +7,7 @@ import org.jsoup.Jsoup;
 
 import java.io.IOException;
 
-public abstract class Performer<T> {
+public abstract class WSJPerformer<T> {
 
     protected abstract T getJsonData(JsonObject jsonObject);
     public void perform(String url, ExcelManager excelManager, String country, String wsjCode, String tableKey) throws IOException {

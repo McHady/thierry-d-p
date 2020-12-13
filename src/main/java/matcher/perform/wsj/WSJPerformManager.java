@@ -1,11 +1,11 @@
-package matcher.perform;
+package matcher.perform.wsj;
 
 import matcher.ExcelManager;
 
 import java.io.IOException;
 import java.util.Objects;
 
-public class PerformManager {
+public class WSJPerformManager {
 
     public  static void perform(String resultSuffix, String url, ExcelManager excelManager, String country, String wsjCode, String tableKey) throws IOException {
         perform(Objects.requireNonNull(TaskType.getTypeBySuffix(resultSuffix)), url, excelManager, country, wsjCode, tableKey);

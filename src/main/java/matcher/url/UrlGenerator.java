@@ -1,6 +1,6 @@
 package matcher.url;
 
-import matcher.url.impl.CountryCodeIsEmptyBuildStrategy;
+import matcher.url.wsj.impl.CountryCodeIsEmptyBuildStrategy;
 
 public class UrlGenerator {
 

@@ -8,21 +8,28 @@ import java.util.stream.Collectors;
 
 public class FileManager {
 
-    private final String wsjFileFolder;
-    private final String wsjFileSuffix;
-    private final String resultFileFolder;
-    private final String resultFileSuffix;
+    private String inputFileFolder;
+    private String inputFileSuffix;
+    private String resultFileFolder;
+    private String resultFileSuffix;
+    private Boolean ignoreFileNameParts = false;
 
     public FileManager(Configurationable config){
-        this(config.getWSJFileFolder(), "list", config.getResultFileFolder(), config.getResultFileSuffix());
+        this(config.getInputFileFolder(), "list", config.getResultFileFolder(), config.getResultFileSuffix());
     }
 
-    public FileManager(String wsjFileFolder, String wsjFileSuffix, String resultFileFolder, String resultFileSuffix) {
+    public FileManager(String inputFileFolder, String inputFileSuffix, String resultFileFolder, String resultFileSuffix) {
 
-        this.wsjFileFolder = wsjFileFolder;
-        this.wsjFileSuffix = wsjFileSuffix;
+        this.inputFileFolder = inputFileFolder;
+        this.inputFileSuffix = inputFileSuffix;
         this.resultFileFolder = resultFileFolder;
         this.resultFileSuffix = resultFileSuffix;
+    }
+
+    public FileManager(Configurationable config, Boolean ignoreFileNameParts){
+
+        this(config);
+        this.ignoreFileNameParts = ignoreFileNameParts;
     }
 
     private List<String> getFolderFilesBySuffix(String folder, String suffix){
@@ -31,8 +38,17 @@ public class FileManager {
                 .map(file -> folder + "/" + file.getName())
                 .collect(Collectors.toList());
     }
-    public List<String> getWSJFiles(){
-        return this.getFolderFilesBySuffix(this.wsjFileFolder, this.wsjFileSuffix);
+    public List<String> getInputFiles(){
+        return this.ignoreFileNameParts
+                ? this.GetFolderFiles(this.inputFileFolder)
+                : this.getFolderFilesBySuffix(this.inputFileFolder, this.inputFileSuffix);
+    }
+
+    private List<String> GetFolderFiles(String folder) {
+        return Arrays.stream(Objects.requireNonNull(new File(folder).listFiles()))
+                .filter(file -> file.isFile() && file.getName().contains(".xlsx"))
+                .map(file -> folder + "/" + file.getName())
+                .collect(Collectors.toList());
     }
 
     public List<String> getResultFiles(){
@@ -40,6 +56,6 @@ public class FileManager {
     }
 
     public String getCountryByFileName(String filename){
-        return new File(filename).getName().replace(wsjFileSuffix + ".xlsx", "");
+        return new File(filename).getName().replace(inputFileSuffix + ".xlsx", "");
     }
 }

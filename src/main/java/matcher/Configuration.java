@@ -5,9 +5,11 @@ import java.util.Properties;
 
 public class Configuration implements Configurationable {
 
+    private Integer investingDelay;
+    private Integer scriptCode;
     private String resultFileFolder = ".";
 
-    private String wsjFileFolder = ".";
+    private String inputFileFolder = ".";
     private String wsjCountryCodeColumn = "AH";
     private String wsjPrefixColumn = "AI";
     private String wsjCodeColumn = "D";
@@ -25,7 +27,10 @@ public class Configuration implements Configurationable {
             var properties = new Properties();
             properties.load(stream);
 
-            this.wsjFileFolder = properties.getProperty("WSJ_FILE_FOLDER", ".");
+            this.scriptCode = Integer.parseInt( properties.getProperty("SCRIPT_CODE", "0") );
+            this.investingDelay = Integer.parseInt( properties.getProperty("INVESTING_REQUEST_DELAY", "13"));
+
+            this.inputFileFolder = properties.getProperty("INPUT_FILE_FOLDER", ".");
             this.wsjCountryCodeColumn = properties.getProperty("WSJ_COUNTRY_CODE_COLUMN", "AH");
             this.wsjPrefixColumn = properties.getProperty("WSJ_PREFIX_COLUMN", "AI");
             this.wsjCodeColumn = properties.getProperty("WSJ_CODE_COLUMN", "D");
@@ -69,13 +74,22 @@ public class Configuration implements Configurationable {
         return resultFileFolder;
     }
 
-    public String getWSJFileFolder() {
-        return wsjFileFolder;
+    public String getInputFileFolder() {
+        return inputFileFolder;
     }
 
     @Override
     public String getResultFileSuffix() {
         return this.resultFileSuffix;
+    }
+
+    @Override
+    public int getScriptCode() {
+        return this.scriptCode;
+    }
+
+    public Integer getInvestingDelay() {
+        return investingDelay;
     }
 }
 

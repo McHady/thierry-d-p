@@ -1,14 +1,14 @@
-package matcher.perform;
+package matcher.perform.wsj;
 
 public enum TaskType {
     LAST_PRICE("3-result", new LastPricePerformer()),
     OUTSTANDING_FLOAT("1", new SharesOutstandingPublicFloatPerformer());
 
     private final String suffix;
-    private final Performer<?> performer;
+    private final WSJPerformer<?> performer;
 
-    TaskType(String suffix, Performer<?> performer){
 
+    TaskType(String suffix, WSJPerformer<?> performer){
         this.suffix = suffix;
         this.performer = performer;
     }
@@ -22,6 +22,6 @@ public enum TaskType {
         return null;
     }
 
-    public Performer<?> getPerformer() { return this.performer; }
+    public WSJPerformer<?> getPerformer() { return this.performer; }
 }
 

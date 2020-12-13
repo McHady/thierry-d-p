@@ -1,4 +1,4 @@
-package matcher.url.impl;
+package matcher.url.wsj.impl;
 
 import matcher.url.IBuildStrategy;
 import matcher.url.UrlBuilder;

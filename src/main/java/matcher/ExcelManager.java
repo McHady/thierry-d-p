@@ -90,7 +90,7 @@ public class ExcelManager implements Closeable {
         this.setCellValue(0, rowIndex, columnName, value);
     }
     public void setCellValue(Integer sheetIndex, Integer rowIndex, String columnName, String value){
-        this.setCellValue(sheetIndex, rowIndex, columnName, value, CellType.NUMERIC);
+        this.setCellValue(sheetIndex, rowIndex, columnName, value, CellType.STRING);
     }
     public void setCellValue(Integer rowIndex, String columnName, String value, CellType cellType){
         this.setCellValue(0, rowIndex, columnName, value, cellType);

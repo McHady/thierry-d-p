@@ -1,10 +1,10 @@
-package matcher.perform;
+package matcher.perform.wsj;
 
 import com.google.gson.JsonObject;
 import matcher.ExcelManager;
 import org.apache.poi.ss.usermodel.CellType;
 
-public class LastPricePerformer extends Performer<String> {
+public class LastPricePerformer extends WSJPerformer<String> {
 
     @Override
     protected String getJsonData(JsonObject jsonObject) {
