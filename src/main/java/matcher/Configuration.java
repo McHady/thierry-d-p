@@ -9,13 +9,13 @@ public class Configuration implements Configurationable {
     private Integer scriptCode;
     private String resultFileFolder = ".";
 
+    private String inputFileSuffix = "3";
     private String inputFileFolder = ".";
     private String wsjCountryCodeColumn = "AH";
     private String wsjPrefixColumn = "AI";
     private String wsjCodeColumn = "D";
     private String wsjKeyColumn = "B";
 
-    private String urlRoot = "https://www.wsj.com/market-data/quotes/";
     private String resultFileSuffix = "3-result";
 
     public Configuration(String filename) {
@@ -31,6 +31,7 @@ public class Configuration implements Configurationable {
             this.investingDelay = Integer.parseInt( properties.getProperty("INVESTING_REQUEST_DELAY", "13"));
 
             this.inputFileFolder = properties.getProperty("INPUT_FILE_FOLDER", ".");
+            this.inputFileSuffix = properties.getProperty("INPUT_FILE_SUFFIX", "3");
             this.wsjCountryCodeColumn = properties.getProperty("WSJ_COUNTRY_CODE_COLUMN", "AH");
             this.wsjPrefixColumn = properties.getProperty("WSJ_PREFIX_COLUMN", "AI");
             this.wsjCodeColumn = properties.getProperty("WSJ_CODE_COLUMN", "D");
@@ -38,10 +39,6 @@ public class Configuration implements Configurationable {
 
             this.resultFileFolder = properties.getProperty("RESULT_FILE_FOLDER", ".");
             this.resultFileSuffix = properties.getProperty("RESULT_FILE_SUFFIX", "3-result");
-
-            this.urlRoot = properties.getProperty("URL_ROOT", "https://www.wsj.com/market-data/quotes/");
-            if (!this.urlRoot.endsWith("/"))
-                this.urlRoot += "/";
 
         } catch (FileNotFoundException e) {
             System.out.println("Can't find configuration file");
@@ -62,10 +59,6 @@ public class Configuration implements Configurationable {
         return this.wsjCodeColumn;
     }
 
-    public String getUrlRoot() {
-        return this.urlRoot;
-    }
-
     public String getWSJKeyColumn() {
         return wsjKeyColumn;
     }
@@ -76,6 +69,11 @@ public class Configuration implements Configurationable {
 
     public String getInputFileFolder() {
         return inputFileFolder;
+    }
+
+    @Override
+    public String getInputFileSuffix() {
+        return this.inputFileSuffix;
     }
 
     @Override

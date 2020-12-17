@@ -14,6 +14,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class InvestingScript extends Script {
 
+    private final String urlRoot = "https://www.investing.com/";
     public InvestingScript(Configurationable config) {
         super(config);
     }
@@ -23,7 +24,7 @@ public class InvestingScript extends Script {
 
         var inputFiles = fileManager.getInputFiles();
         var builderSwitch = new BuilderSwitch();
-        urlGenerator = new UrlGenerator(new InvestingSwitchBasedStrategy(builderSwitch), this.config.getUrlRoot());
+        urlGenerator = new UrlGenerator(new InvestingSwitchBasedStrategy(builderSwitch), this.urlRoot);
 
         for (var inputFile : inputFiles){
             try (var excel = new ExcelManager(inputFile)) {

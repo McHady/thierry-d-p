@@ -32,7 +32,7 @@ public abstract class Script {
         var scriptType = ScriptType.getByCode(config.getScriptCode());
         switch (scriptType) {
             case WSJ:
-                return new WSJScript(config);
+                return new WSJCreateNewFileFileScript(config);
             case INVESTING:
                 return new InvestingScript(config);
         }

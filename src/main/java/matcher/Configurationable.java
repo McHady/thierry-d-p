@@ -7,13 +7,12 @@ public interface Configurationable {
 
     String getWSJCodeColumn();
 
-    String getUrlRoot();
-
     String getWSJKeyColumn();
 
     String getResultFileFolder();
 
     String getInputFileFolder();
+    String getInputFileSuffix();
 
     String getResultFileSuffix();
 

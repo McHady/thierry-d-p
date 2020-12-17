@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.*;
 
 import java.io.*;
 
-public class ExcelManager implements Closeable {
+public class ExcelManager implements Closeable, ElectronicDocument {
 
     private XSSFWorkbook workBook;
     private final String filename;
@@ -37,6 +37,7 @@ public class ExcelManager implements Closeable {
         var sheet = this.workBook.getSheetAt(sheetIndex);
         var row = sheet.getRow(rowIndex);
 
+        if (row != null){
         var cellIter = row.cellIterator();
         while (cellIter.hasNext()) {
             var cell = (XSSFCell) cellIter.next();
@@ -50,6 +51,8 @@ public class ExcelManager implements Closeable {
             return row.createCell(CellReference.convertColStringToIndex(columnName));
         else
             return null;
+        }
+        return null;
     }
 
     public String getCellValue(Integer rowIndex, String columnName){
@@ -161,4 +164,10 @@ public class ExcelManager implements Closeable {
     public void close() throws IOException {
         this.workBook.close();
     }
+
+    @Override
+    public String getFileName() {
+        return this.filename;
+    }
 }
+

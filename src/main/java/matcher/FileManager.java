@@ -15,7 +15,7 @@ public class FileManager {
     private Boolean ignoreFileNameParts = false;
 
     public FileManager(Configurationable config){
-        this(config.getInputFileFolder(), "list", config.getResultFileFolder(), config.getResultFileSuffix());
+        this(config.getInputFileFolder(), config.getInputFileSuffix(), config.getResultFileFolder(), config.getResultFileSuffix());
     }
 
     public FileManager(String inputFileFolder, String inputFileSuffix, String resultFileFolder, String resultFileSuffix) {
@@ -56,6 +56,6 @@ public class FileManager {
     }
 
     public String getCountryByFileName(String filename){
-        return new File(filename).getName().replace(inputFileSuffix + ".xlsx", "");
+        return new File(filename).getName().replace(inputFileSuffix + ".xlsx", "").trim();
     }
 }
