@@ -2,7 +2,8 @@ package matcher.script;
 
 public enum ScriptType {
     WSJ(0),
-    INVESTING(1);
+    INVESTING(1),
+    YAHOO(2);
 
     private final int code;
 

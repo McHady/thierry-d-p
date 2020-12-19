@@ -13,10 +13,13 @@ public abstract class Script {
         this.config = config;
     }
 
+    protected FileManager buildFileManager() {
+        return new FileManager(this.config, this.ignoreFileNameParts());
+    }
     public void run(){
 
         var urlGenerator = this.getUrlGenerator();
-        var fileManager = new FileManager(this.config, this.ignoreFileNameParts());
+        var fileManager = this.buildFileManager();
 
         this.process(urlGenerator, fileManager);
     }
@@ -35,6 +38,8 @@ public abstract class Script {
                 return new WSJCreateNewFileFileScript(config);
             case INVESTING:
                 return new InvestingScript(config);
+            case YAHOO:
+                return new YahooScript(config);
         }
 
         return null;
